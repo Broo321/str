@@ -106,7 +106,7 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0; /* pod spodem */
+  z-index: 0;
 }
 
 .powitanie::before {
@@ -120,7 +120,7 @@ html, body {
 
 .powitanie .nakladka {
   position: relative;
-  z-index: 2; /* nad obrazem i nakładką */
+  z-index: 2;
   max-width: 900px;
   padding: 1rem 2rem;
   box-sizing: border-box;
