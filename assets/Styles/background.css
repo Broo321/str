@@ -173,7 +173,7 @@ html, body {
   padding: 1.5rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   color: #fff;
-  height: 300px; /* jednakowa wysokość */
+  height: 300px;
   box-sizing: border-box;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -185,7 +185,7 @@ html, body {
 }
 
 .karta-obraz {
-  height: 300px; /* równa wysokość z tekstową */
+  height: 300px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -373,5 +373,5 @@ html, body {
 }
 
 .content { 
-  margin-top: 80px; /* Dopasuj do wysokości nagłówka */ 
+  margin-top: 80px;
 }
