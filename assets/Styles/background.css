@@ -86,99 +86,108 @@ html, body {
   transition: all 0.3s ease; 
 }
 
-/* === POWITANIE === */ 
-.powitanie { 
-  position: relative; 
-  height: 350px; 
-  background: url('assets/Images/powitanie.jpg') center/cover no-repeat; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  padding: 1rem; 
-  box-sizing: border-box; 
-  color: #00ff99; 
-  text-align: center; 
-  overflow: hidden; 
+/* === POWITANIE === */
+.powitanie {
+  position: relative;
+  height: 350px;
+  background: url('assets/Images/powitanie.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #00ff99;
+  text-align: center;
+  overflow: hidden;
 }
 
-.powitanie::before { 
-  content: ""; 
-  position: absolute; 
-  top: 0; left: 0; right: 0; bottom: 0; 
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.7) 60%); 
-  z-index: 1; 
-  pointer-events: none; 
+.powitanie::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.7) 60%);
+  z-index: 1;
+  pointer-events: none;
 }
 
-.powitanie .nakladka { 
-  position: relative; 
-  z-index: 2; 
-  max-width: 900px; 
-  padding: 1rem 2rem; 
-  box-sizing: border-box; 
-  display: flex; 
-  flex-direction: column; 
-  gap: 0.5rem; 
+.powitanie .nakladka {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.powitanie .nakladka h1, 
-.powitanie .nakladka p { 
-  margin: 0; 
-  font-weight: 600; 
-  color: #00ff99; 
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.9); 
+.powitanie .nakladka h1,
+.powitanie .nakladka p {
+  margin: 0;
+  font-weight: 600;
+  color: #00ff99;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
 }
 
-.powitanie .nakladka h1 { 
-  font-size: clamp(2rem, 5vw, 3rem); 
+.powitanie .nakladka h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
-.powitanie .nakladka p { 
-  font-size: clamp(1rem, 3vw, 1.5rem); 
+.powitanie .nakladka p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
-/* === BLOKI ZAWARTOŚCI === */ 
-.blok-zawartosci { 
-  display: flex; 
-  justify-content: space-between; 
-  flex-wrap: nowrap; 
-  margin-bottom: 2rem; 
+/* === BLOKI ZAWARTOŚCI === */
+.blok-zawartosci {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 2rem;
+  gap: 1rem;
 }
 
-.blok-zawartosci.odwrocony { 
-  flex-direction: row-reverse; 
+.blok-zawartosci.odwrocony {
+  flex-direction: row-reverse;
 }
 
-.karta-tekstowa, 
-.karta-obraz { 
-  flex: 1 1 50%; 
-  margin: 1rem; 
-  border-radius: 10px; 
+.karta-tekstowa,
+.karta-obraz {
+  flex: 1 1 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.karta-tekstowa { 
-  background: #1a1a1a; 
-  padding: 1.5rem; 
-  box-shadow: 0 0 15px rgba(0,0,0,0.3); 
-  color: #fff; 
-  height: 250px; 
+.karta-tekstowa {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  height: 300px; /* jednakowa wysokość */
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.karta-tekstowa h2 { 
-  color: #00ff99; 
+.karta-tekstowa h2 {
+  color: #00ff99;
+  margin-top: 0;
 }
 
-.karta-obraz { 
-  height: 100%; 
-  overflow: hidden; 
-  border-radius: 10px; 
+.karta-obraz {
+  height: 300px; /* równa wysokość z tekstową */
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.karta-obraz img { 
-  width: 100%; 
-  height: 300px; 
-  object-fit: cover; 
-  display: block; 
+.karta-obraz img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
 
 /* === PRZYCISKI === */ 
