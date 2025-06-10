@@ -161,7 +161,7 @@ html, body {
   padding: 1.5rem; 
   box-shadow: 0 0 15px rgba(0,0,0,0.3); 
   color: #fff; 
-  height: 100%; 
+  height: 250px; 
 }
 
 .karta-tekstowa h2 { 
@@ -176,7 +176,7 @@ html, body {
 
 .karta-obraz img { 
   width: 100%; 
-  height: 100%; 
+  height: 300px; 
   object-fit: cover; 
   display: block; 
 }
