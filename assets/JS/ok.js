@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Smooth scroll dla linków nawigacyjnych
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -7,8 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (target) {
         target.scrollIntoView({ behavior: "smooth" });
       }
-
-      // Zamknięcie menu po kliknięciu w link (dla wersji mobilnej)
       const nav = document.querySelector(".nawigacja");
       const hamburger = document.querySelector(".hamburger");
       if (nav.classList.contains("active")) {
@@ -17,8 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  // Obsługa hamburger menu
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector(".nawigacja");
 
