@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hamburger.addEventListener("click", () => {
     nav.classList.toggle("active");
-    hamburger.classList.toggle("active"); // Dodanie animacji do hamburgera
+    hamburger.classList.toggle("active");
   });
 });
