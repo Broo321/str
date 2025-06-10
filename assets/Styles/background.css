@@ -161,7 +161,7 @@ html, body {
   padding: 1.5rem; 
   box-shadow: 0 0 15px rgba(0,0,0,0.3); 
   color: #fff; 
-  height: 250px; 
+  height: 100%; 
 }
 
 .karta-tekstowa h2 { 
