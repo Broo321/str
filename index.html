@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zielona Polska.</title>
-    <link rel="stylesheet" href="assets/Styles/background.css">
-    <link rel="icon" type="image/png" href="assets/Images/ikonka.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zielona Polska</title>
+  <link rel="stylesheet" href="assets/Styles/background.css" />
+  <link rel="icon" type="image/png" href="assets/Images/ikonka.png" />
 </head>
 <body>
+
   <!-- Nagłówek -->
   <header class="naglowek">
-  <div class="logo">
-  <img src="assets/Images/logo.svg" alt="Logo" />
-  <span>Zielona Polska</span>
-  </div>
-  <nav class="nawigacja">
+    <div class="logo">
+      <img src="assets/Images/logo.svg" alt="Logo" />
+      <span>Zielona Polska</span>
+    </div>
+    <nav class="nawigacja">
       <a href="#lasy">Lasy</a>
       <a href="#góry">Góry</a>
       <a href="#kontakt">Kontakt</a>
       <a href="#informacja">Informacje</a>
     </nav>
-
     <div class="hamburger" id="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div></div><div></div><div></div>
     </div>
   </header>
 
   <!-- Sekcja powitalna -->
   <section class="powitanie">
+    <img src="assets/Images/powitanie.jpg" alt="Powitanie" class="obraz-powitanie" />
     <div class="nakladka">
       <h1>Witamy na stronie o polskiej przyrodzie</h1>
       <p>Odkryj piękno natury i jej różnorodność każdego dnia</p>
     </div>
   </section>
 
-  <main class="glowna">
-    <section class="blok-zawartosci">
-      <div id="lasy" class="karta-tekstowa">
+  <main class="glowna content">
+    <section class="blok-zawartosci" id="lasy">
+      <div class="karta-tekstowa">
         <h2>Magia polskich lasów</h2>
         <p>Zapraszamy do odkrywania bogactwa naszych lasów – od wiekowych dębów po ukryte ścieżki pełne dzikiej fauny i flory.</p>
         <a href="#" class="przycisk czerwony">Dowiedz się więcej</a>
       </div>
-      <div class="karta-obraz img1" src="assets/Images/lastory.jpg"></div>
+      <div class="karta-obraz img1"></div>
     </section>
 
-    <section id="góry" class="blok-zawartosci odwrocony">
+    <section class="blok-zawartosci odwrocony" id="góry">
       <div class="karta-obraz img2"></div>
       <div class="karta-tekstowa">
         <h2>Wspaniałość polskich gór</h2>
@@ -55,24 +54,24 @@
       </div>
     </section>
 
-    <section id="kontakt" class="wezwanie">
+    <section class="wezwanie" id="kontakt">
       <h2>Chcesz dowiedzieć się więcej?<br>Skontaktuj się z nami!</h2>
       <a href="#" class="przycisk czerwony-obrys">Kontakt</a>
     </section>
 
-    <section id="informacja" class="informacje">
+    <section class="informacje" id="informacja">
       <h3>Pasja do natury i ochrony środowiska</h3>
       <p>Nasza misja to promowanie wiedzy o przyrodzie, zrównoważonym rozwoju i zachęcanie do aktywnego spędzania czasu na łonie natury.</p>
     </section>
   </main>
 
+  <!-- Stopka -->
   <footer class="stopka">
     <div class="kontener-stopki">
       <div class="kolumna-stopki">
         <h2 class="logo">Polska Natura</h2>
         <p>Łączymy ludzi z naturą, inspirując do odkrywania przyrody i troski o nasze środowisko.</p>
       </div>
-
       <div class="kolumna-stopki">
         <h3>Mapa strony</h3>
         <ul>
@@ -80,7 +79,6 @@
           <li><a href="#góry">Góry</a></li>
         </ul>
       </div>
-
       <div class="kolumna-stopki">
         <h3>Przydatne linki</h3>
         <ul>
@@ -89,7 +87,6 @@
           <li><a href="#łąki">Łąki i polany</a></li>
         </ul>
       </div>
-
       <div class="kolumna-stopki">
         <h3>Zapisz się do newslettera</h3>
         <form class="formularz-newslettera">
@@ -99,7 +96,6 @@
         </form>
       </div>
     </div>
-
     <div class="dol-stopki">
       <p>Wszystkie prawa zastrzeżone © 2025</p>
       <p>Kuba Kaptur • Klasa 3A</p>
