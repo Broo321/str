@@ -169,7 +169,7 @@ html, body {
 }
 
 .karta-obraz { 
-  height: 300px; 
+  height: 100%; 
   overflow: hidden; 
   border-radius: 10px; 
 }
