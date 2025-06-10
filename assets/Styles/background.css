@@ -90,7 +90,8 @@ html, body {
 .powitanie {
   position: relative;
   height: 350px;
-  background: url('/assets/Images/powitanie.jpg') center/cover no-repeat;
+  background: url('assets/Images/powitanie.jpg') 
+  center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
