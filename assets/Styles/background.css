@@ -18,6 +18,21 @@ html, body {
   -ms-user-select: none; 
   user-select: none; 
 }
+.glowna {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solidrgb(61, 61, 61);
+}
 
 /* === NAGŁÓWEK === */ 
 .naglowek { 
@@ -45,6 +60,13 @@ html, body {
   height: 36px; 
   width: 36px; 
   filter: brightness(1.2); 
+}
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo span { 
@@ -177,6 +199,7 @@ html, body {
   box-sizing: border-box;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  align-items: center;
 }
 
 .karta-tekstowa h2 {
@@ -229,13 +252,14 @@ html, body {
 }
 
 /* === SEKCJA KONTAKT === */ 
+.informacje,
 .wezwanie { 
   background: linear-gradient(135deg,#00cc77 0%, #0a0a0a 100%); 
   padding: 3rem; 
-  text-align: center; 
-  border-radius: 10px; 
+  text-align: center;
   margin: 2rem 0; 
-  color: #ffffff; 
+  max-width: 1600px;
+  color: #ffffff;
 }
 
 .wezwanie h2 { 
@@ -272,7 +296,11 @@ html, body {
 .kolumna-stopki { 
   flex: 1 1 220px; 
 }
-
+.kolumna-stopki .przycisk {
+  max-width: 120px;
+  width: fit-content;
+  margin-top: 10px;
+}
 .kolumna-stopki h3 { 
   margin-bottom: 15px; 
   font-size: clamp(12px, 3vw, 18px); 
@@ -339,6 +367,24 @@ html, body {
 
 /* === MEDIA === */ 
 @media (max-width: 768px) { 
+  .blok-zawartosci {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blok-zawartosci.odwrocony {
+    flex-direction: column;
+  }
+
+  .karta-obraz {
+    order: 2;
+    width: 100%;
+  }
+
+  .karta-tekstowa {
+    order: 1;
+    width: 100%;
+  }
   .nawigacja { 
     display: none; 
     flex-direction: column; 
@@ -369,6 +415,13 @@ html, body {
 
   .hamburger.active div:nth-child(3) { 
     transform: rotate(-45deg) translate(5px, -5px); 
+  }
+}
+
+@media (max-width: 400px) {
+  .karta-tekstowa {
+    font-size: 14px;
+    padding: 1rem;
   }
 }
 
